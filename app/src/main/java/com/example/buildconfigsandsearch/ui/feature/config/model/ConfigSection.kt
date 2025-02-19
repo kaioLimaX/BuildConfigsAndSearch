@@ -15,12 +15,12 @@ data class ConfigSection(
 
         companion object {
 
-            fun Type.texto(context: Context): String = when (this) {
+            fun Type.text(context: Context): String = when (this) {
                 GENERAL_CONFIG -> "Geral"
                 SECURITY_CONFIG -> "Segurança"
                 ADVANCED_CONFIG -> "Avançado"
             }
-            fun Type.descricao(context: Context): String = when (this) {
+            fun Type.description(context: Context): String = when (this) {
                 GENERAL_CONFIG -> "configurações gerais"
                 SECURITY_CONFIG -> "configurações de segurança"
                 ADVANCED_CONFIG -> "configurações avançadas"
