@@ -42,6 +42,12 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+
+    // Core do Koin
+    implementation("io.insert-koin:koin-android:3.5.3")
+    // Extensão para Jetpack Compose (se estiver usando Compose)
+    implementation("io.insert-koin:koin-androidx-compose:3.5.3")
+
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
